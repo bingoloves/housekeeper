@@ -1,6 +1,5 @@
 package com.github.base.http;
 
-import com.github.base.bean.IAMAuth;
 import com.github.base.bean.UploadBean;
 
 import java.util.List;
@@ -22,15 +21,6 @@ public interface ApiService {
      /********************************* 示例代码 ****************************************/
     @GET("http://v.juhe.cn/toutiao/index?key=238ca532342eb15fb820f1f7fe08c2d6")
     Observable<BaseResponse> testApi(@Query("type") String type);
-
-    /**
-     * 上传单张图片
-     * @param img
-     * @return
-     */
-    @Multipart
-    @POST("/file/upload")
-    Observable<BaseResponse> uploadImage(@Part() MultipartBody.Part img);
 
     /**
      * 上传多张图片
@@ -56,13 +46,5 @@ public interface ApiService {
      * @return
      */
     @POST("v3/auth/tokens")
-    Observable<BaseResponse> auth(@Body IAMAuth auth);
-
-    /**
-     * 长传轨迹图片
-     * @return
-     */
-    @POST(Api.UPLOAD_TRACE)
-    Observable<BaseResponse> upLoadTrack(@Part() MultipartBody.Part file);
-
+    Observable<BaseResponse> auth();
 }

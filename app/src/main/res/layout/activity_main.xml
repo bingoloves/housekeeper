@@ -9,5 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="测试"/>
+    <Button
+        android:id="@+id/btn_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="购物记录"/>
+    <Button
+        android:id="@+id/btn_bill_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询购物记录"/>
 
 </LinearLayout>

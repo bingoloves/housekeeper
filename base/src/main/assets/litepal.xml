@@ -33,6 +33,7 @@
     -->
     <list>
         <mapping class="com.github.base.debug.LoggerInfo"></mapping>
+        <mapping class="com.github.base.bean.Bill"></mapping>
     </list>
 
     <!--
